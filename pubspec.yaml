@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_compass: ^0.8.1
   flutter_riverpod: 2.3.6
   go_router: ^17.0.0
   google_fonts: ^6.3.2
@@ -22,3 +23,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/compass/
