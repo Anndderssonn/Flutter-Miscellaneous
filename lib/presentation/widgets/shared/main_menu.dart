@@ -23,6 +23,11 @@ final menuItems = <MenuItems>[
     route: '/gyroscope-ball',
   ),
   MenuItems(title: 'Compass', icon: Icons.explore, route: '/compass'),
+  MenuItems(
+    title: 'Pokemons',
+    icon: Icons.catching_pokemon,
+    route: '/pokemons',
+  ),
 ];
 
 class MainMenu extends StatelessWidget {
@@ -34,16 +39,15 @@ class MainMenu extends StatelessWidget {
       crossAxisCount: 3,
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
-      children:
-          menuItems
-              .map(
-                (item) => HomeMenuItem(
-                  title: item.title,
-                  route: item.route,
-                  icon: item.icon,
-                ),
-              )
-              .toList(),
+      children: menuItems
+          .map(
+            (item) => HomeMenuItem(
+              title: item.title,
+              route: item.route,
+              icon: item.icon,
+            ),
+          )
+          .toList(),
     );
   }
 }
