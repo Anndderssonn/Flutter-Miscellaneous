@@ -36,7 +36,7 @@ class _PokemonView extends StatelessWidget {
           IconButton(
             onPressed: () {
               SharePlugin.shareLink(
-                pokemon.spriteFront,
+                "https://flutter-pokemon-deeplinks-test-webs.vercel.app/pokemons/${pokemon.id}",
                 'Look at this pokemon',
               );
             },
