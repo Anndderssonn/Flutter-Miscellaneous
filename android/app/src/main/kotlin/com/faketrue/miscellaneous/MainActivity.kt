@@ -1,4 +1,4 @@
-package com.example.miscellaneous
+package com.faketrue.miscellaneous
 
 import io.flutter.embedding.android.FlutterActivity
 
