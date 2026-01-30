@@ -11,3 +11,8 @@ sha-256
 cd android
 ./gradlew signingReport
 ```
+## iOS deeplinks tests
+```
+xcrun simctl openurl booted https://flutter-pokemon-deeplinks-test-webs.vercel.app/pokemons/1
+
+```
