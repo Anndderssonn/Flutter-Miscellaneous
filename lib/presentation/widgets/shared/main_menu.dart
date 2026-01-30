@@ -28,6 +28,7 @@ final menuItems = <MenuItems>[
     icon: Icons.catching_pokemon,
     route: '/pokemons',
   ),
+  MenuItems(title: 'Biometrics', icon: Icons.fingerprint, route: '/biometrics'),
 ];
 
 class MainMenu extends StatelessWidget {
