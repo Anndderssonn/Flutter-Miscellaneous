@@ -15,6 +15,7 @@ dependencies:
   geolocator: ^14.0.2
   go_router: ^17.0.0
   google_fonts: ^8.0.0
+  google_maps_flutter: ^2.14.0
   local_auth: ^3.0.0
   permission_handler: ^12.0.1
   sensors_plus: ^7.0.0

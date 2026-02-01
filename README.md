@@ -16,3 +16,5 @@ cd android
 xcrun simctl openurl booted https://flutter-pokemon-deeplinks-test-webs.vercel.app/pokemons/1
 
 ```
+
+## Change API Google Maps Keys
