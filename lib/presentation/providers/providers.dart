@@ -10,3 +10,4 @@ export 'local_auth/local_auth_providers.dart';
 export 'location/user_location_provider.dart';
 export 'location/tracking_location_provider.dart';
 export 'location/map_controlled_provider.dart';
+export 'badge/badge_counter_provider.dart';

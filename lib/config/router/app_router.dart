@@ -54,5 +54,6 @@ final router = GoRouter(
       builder: (context, state) => const MapControlledScreen(),
     ),
     GoRoute(path: '/map', builder: (context, state) => const MapScreen()),
+    GoRoute(path: '/badge', builder: (context, state) => const BadgeScreen()),
   ],
 );

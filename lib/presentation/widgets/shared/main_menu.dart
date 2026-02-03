@@ -44,6 +44,7 @@ final menuItems = <MenuItems>[
     icon: Icons.photo_size_select_actual_rounded,
     route: '/map',
   ),
+  MenuItems(title: 'Badge', icon: Icons.notification_add, route: '/badge'),
 ];
 
 class MainMenu extends StatelessWidget {

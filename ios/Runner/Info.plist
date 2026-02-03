@@ -65,5 +65,9 @@
 	<true/>
 	<key>NSFaceIDUsageDescription</key>
 	<string>We will use your Face ID to perform the authentication process.</string>
+	<key>UIBackgroundModes</key>
+    <array>
+        <string>remote-notification</string>
+    </array>
 </dict>
 </plist>
