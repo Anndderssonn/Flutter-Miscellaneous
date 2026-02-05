@@ -55,5 +55,13 @@ final router = GoRouter(
     ),
     GoRoute(path: '/map', builder: (context, state) => const MapScreen()),
     GoRoute(path: '/badge', builder: (context, state) => const BadgeScreen()),
+    GoRoute(
+      path: '/ad-full-screen',
+      builder: (context, state) => const AdFullScreen(),
+    ),
+    GoRoute(
+      path: '/ad-rewarded',
+      builder: (context, state) => const AdRewardedScreen(),
+    ),
   ],
 );

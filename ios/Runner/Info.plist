@@ -69,5 +69,7 @@
     <array>
         <string>remote-notification</string>
     </array>
+	<key>GADApplicationIdentifier</key>
+	<string>iOS-KEY</string>
 </dict>
 </plist>
