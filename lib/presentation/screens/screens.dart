@@ -8,6 +8,7 @@ export 'sensors/gyroscope_screen.dart';
 export 'sensors/magnetometer_screen.dart';
 export 'pokemons/pokemons_screen.dart';
 export 'pokemons/pokemon_screen.dart';
+export 'pokemons/db_pokemons_screen.dart';
 export 'biometrics/biometric_screen.dart';
 export 'location/location_screen.dart';
 export 'location/map_controlled_screen.dart';

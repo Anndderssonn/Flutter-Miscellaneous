@@ -18,3 +18,10 @@ xcrun simctl openurl booted https://flutter-pokemon-deeplinks-test-webs.vercel.a
 ```
 
 ## Change API Google Maps Keys
+
+## Generate Code (ISAR - Riverpod)
+```
+dart run build_runner build
+flutter pub run build_runner build
+flutter pub run build_runner watch
+```

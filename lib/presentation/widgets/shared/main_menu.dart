@@ -28,6 +28,11 @@ final menuItems = <MenuItems>[
     icon: Icons.catching_pokemon,
     route: '/pokemons',
   ),
+  MenuItems(
+    title: 'Background Process',
+    icon: Icons.storage_rounded,
+    route: '/pokemons-db',
+  ),
   MenuItems(title: 'Biometrics', icon: Icons.fingerprint, route: '/biometrics'),
   MenuItems(
     title: 'Location',

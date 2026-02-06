@@ -42,6 +42,10 @@ final router = GoRouter(
       ],
     ),
     GoRoute(
+      path: '/pokemons-db',
+      builder: (context, state) => const DbPokemonsScreen(),
+    ),
+    GoRoute(
       path: '/biometrics',
       builder: (context, state) => const BiometricScreen(),
     ),
