@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:workmanager/workmanager.dart';
 import 'package:miscellaneous/config/config.dart';
 import 'package:miscellaneous/domain/domain.dart';
-import 'package:workmanager/workmanager.dart';
+import 'package:miscellaneous/presentation/providers/providers.dart';
 
-class DbPokemonsScreen extends StatelessWidget {
+class DbPokemonsScreen extends ConsumerWidget {
   const DbPokemonsScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final pokemonsDb = ref.watch(pokemonDbProvider);
+    final isPokemonFetchActive = ref.watch(backgroundPokemonFetchProvider);
+
+    if (pokemonsDb.isLoading) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
+
+    final List<Pokemon> pokemons = pokemonsDb.value ?? [];
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Background Process'),
@@ -25,11 +36,15 @@ class DbPokemonsScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: CustomScrollView(slivers: [_PokemonsGrid(pokemons: [])]),
+      body: CustomScrollView(slivers: [_PokemonsGrid(pokemons: pokemons)]),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
-        label: Text('Active periodic fetch'),
-        icon: Icon(Icons.av_timer),
+        onPressed: () {
+          ref.read(backgroundPokemonFetchProvider.notifier).toggleProcess();
+        },
+        label: (isPokemonFetchActive == true)
+            ? const Text('Deactive periodic fetch')
+            : const Text('Active periodic fetch'),
+        icon: const Icon(Icons.av_timer),
       ),
     );
   }

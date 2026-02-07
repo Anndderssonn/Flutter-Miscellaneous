@@ -24,7 +24,7 @@ class SqfliteLocalDbDatasource extends LocalDbDatasource {
           (row) => Pokemon(
             id: row['id'] as int,
             name: row['name'] as String,
-            spriteFront: row['spriteFront'] as String,
+            spriteFront: row['sprite_front'] as String,
           ),
         )
         .toList();
